@@ -9,7 +9,7 @@ main {
     min-height: 700px;
 }
 
-\#section-login {
+#section-login {
     height: 100%;
     width: 400px;
     border-radius: 10px;
