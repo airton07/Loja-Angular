@@ -13,18 +13,19 @@ import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app/app-routing.module';
+//import { RestritoRoutingModule } from './app/restrito/restrito-routing.module';
+import { AppComponent } from './app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InicioComponent } from './inicio/inicio.component';
-import { LoginComponent } from './login/login.component';
-import { MenuComponent } from './menu/menu.component';
-import { RodapeComponent } from './rodape/rodape.component';
-import { RestritoComponent } from './restrito/restrito.component';
-import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-produto.component';
-import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
-import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
-import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
+import { InicioComponent } from './app/inicio/inicio.component';
+import { LoginComponent } from './app/login/login.component';
+import { MenuComponent } from './app/menu/menu.component';
+import { RodapeComponent } from './app/rodape/rodape.component';
+import { RestritoComponent } from './app/restrito/restrito.component';
+import { AtualizaProdutoComponent } from './app/restrito/atualiza-produto/atualiza-produto.component';
+import { CadastroProdutoComponent } from './app/restrito/cadastro-produto/cadastro-produto.component';
+import { ListaProdutoComponent } from './app/restrito/lista-produto/lista-produto.component';
+import { MenuRestritoComponent } from './app/restrito/menu-restrito/menu-restrito.component';
 
 @NgModule({
   declarations: [
@@ -51,10 +52,11 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     MatInputModule,
     MatMenuModule,
     MatToolbarModule,
+    //RestritoRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
