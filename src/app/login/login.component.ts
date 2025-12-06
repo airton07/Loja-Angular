@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
     this._loginService.login(this.usuario, this.senha); 
     this._router.navigate(['/restrito/lista']);
-
+    
     this._loginService.setMostraMenu(false)
   }
 }

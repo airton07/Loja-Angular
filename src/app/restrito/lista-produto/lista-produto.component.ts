@@ -48,7 +48,7 @@ export class ListaProdutoComponent {
     },
       err => { console.log("erro ao Excluir") }
   )
-    // window.location.href = "/restrito/lista"; 
-    // this.router.navigate(["/restrito/lista"]);
+    window.location.href = "/restrito/lista"; 
+    this.router.navigate(["/restrito/lista"]);
   }
 }
