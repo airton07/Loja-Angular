@@ -14,8 +14,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app/app-routing.module';
-
-//import { RestritoRoutingModule } from './app/restrito/restrito-routing.module';
+import { RestritoRoutingModule } from './app/restrito/restrito-routing.module';
 import { AppComponent } from './app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './app/inicio/inicio.component';
@@ -53,7 +52,7 @@ import { MenuRestritoComponent } from './app/restrito/menu-restrito/menu-restrit
     MatInputModule,
     MatMenuModule,
     MatToolbarModule,
-    //RestritoRoutingModule,
+    RestritoRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

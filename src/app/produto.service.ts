@@ -9,6 +9,7 @@ import { Produto } from './models/Produto.model';
 
 export class ProdutoService {
   private url = "http://localhost:3000/produtos";
+  
   constructor(private _httpClient: HttpClient) { }
 
   getProduto(id: any): Observable<Produto> {
