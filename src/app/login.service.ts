@@ -11,11 +11,12 @@ export class LoginService {
 
   constructor() { }
 
-  login(usuario: string, senha: string) {
-    if (usuario == "aluno" && senha == "1234"){
+  login(usuario: string, senha: string){
+    if(usuario == "aluno" && senha == "1234"){
       localStorage.setItem('token','qwer1234'); 
       this.mostraMenu.next(false)
-    } else {
+    }
+    else{
       this.mostraMenu.next(true); 
       window.location.reload();
     }

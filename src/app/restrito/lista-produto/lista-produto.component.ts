@@ -11,19 +11,19 @@ import { ProdutoService } from 'src/app/produto.service';
 })
 
 export class ListaProdutoComponent {
-  public produtos: Produto[] = [];
+  public produtos: Produto[] = [ ];
   public produto: Produto = new Produto(0, "", "", "", 0);
 
   constructor(private _produtoService: ProdutoService,
     private router: Router,
-    private _loginService: LoginService) { }
+    private _loginService: LoginService){}
 
-  ngOnInit(): void {
+  ngOnInit():void{
     this.listarProdutos();
     this._loginService.setMostraMenu(false);
 
   }
-  listarProdutos(): void {
+  listarProdutos():void{
     this._produtoService.getProdutos()
     .subscribe(
       retornaProduto => {
@@ -43,11 +43,12 @@ export class ListaProdutoComponent {
     
   }
   excluir(id: number){
-    this._produtoService.removerProduto(id).subscribe(vaga => {
-      this.listarProdutos()
-    },
+    this._produtoService.removerProduto(id).subscribe(
+      vaga => {
+        this.listarProdutos()
+      },
       err => { console.log("erro ao Excluir") }
-  )
+    )
     window.location.href = "/restrito/lista"; 
     this.router.navigate(["/restrito/lista"]);
   }
