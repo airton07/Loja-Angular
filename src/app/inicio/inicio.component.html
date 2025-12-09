@@ -12,13 +12,11 @@
                     <img src="./assets/img/banner3.PNG" class="d-block w-100" alt="Jogo do ano">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -30,7 +28,8 @@
         <mat-grid-tile *ngFor="let produto of produtos">
             <mat-card class="example-card">
 
-                <img mat-card-image src="./assets/img/jogo1.PNG" alt="produto">
+                <img mat-card-image src="./assets/img/jogo1.PNG" alt="Jogo 1">
+
                 <mat-card-header>
                     <mat-card-title>{{produto.produto}}</mat-card-title>
                 </mat-card-header>
@@ -42,45 +41,7 @@
                 </mat-card-content>
                 <mat-card-actions>
                     <p>{{produto.preco | currency : 'BRL'}}</p>
-                    <button mat-raised-button color="primary">Comprar</button>
-                </mat-card-actions>
-            </mat-card>
-
-        <mat-grid-tile *ngFor="let produto of produtos">
-            <mat-card class="example-card">
-
-                <img mat-card-image src="./assets/img/jogo2.PNG" alt="produto">
-                <mat-card-header>
-                    <mat-card-title>{{produto.produto}}</mat-card-title>
-                </mat-card-header>
-
-                <mat-card-content>
-                    <p>
-                        {{produto.descricao}}
-                    </p>
-                </mat-card-content>]
-                <mat-card-actions>
-                    <p>{{produto.preco | currency : 'BRL'}}</p>
-                    <button mat-raised-button color="primary">Comprar</button>
-                </mat-card-actions>
-            </mat-card>
-
-        <mat-grid-tile *ngFor="let produto of produtos">
-            <mat-card class="example-card">
-
-                <img mat-card-image src="./assets/img/jogo3.PNG" alt="produto">
-                <mat-card-header>
-                    <mat-card-title>{{produto.produto}}</mat-card-title>
-                </mat-card-header>
-
-                <mat-card-content>
-                    <p>
-                        {{produto.descricao}}
-                    </p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <p>{{produto.preco | currency : 'BRL'}}</p>
-                    <button mat-raised-button color="primary">Comprar</button>
+                    <button mat-button>Comprar</button>
                 </mat-card-actions>
             </mat-card>
         </mat-grid-tile>
