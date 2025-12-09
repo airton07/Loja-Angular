@@ -26,8 +26,7 @@ h2 {
 }
 
 mat-grid-list {
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 mat-grid-tile {
@@ -54,8 +53,4 @@ mat-card-actions p {
 mat-card img {
     height: 300px;
     width: 300px;
-}
-mat-card {
-    align-items: center;
-    justify-content: center;
 }
