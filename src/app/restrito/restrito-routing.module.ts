@@ -12,13 +12,12 @@ const restritoRoutes: Routes = [
     { path: 'lista', component: ListaProdutoComponent, canActivate: [GuardGuard]},
     { path: 'editar/:id', component: AtualizaProdutoComponent, canActivate: [GuardGuard]},
     { path:'', redirectTo :'/restrito/ lista', pathMatch :'full'}
-
-  ]
+]
 
 @NgModule({
     imports: [RouterModule.forChild(restritoRoutes)],
     exports: [RouterModule]
-  })
+})
 
 export class RestritoRoutingModule {
 }
