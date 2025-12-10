@@ -17,7 +17,7 @@ h2 {
 }
 
 .example-card {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .example-header-image {
@@ -51,6 +51,6 @@ mat-card-actions p {
 }
 
 mat-card img {
-    height: 300px;
+    height: 250px;
     width: 300px;
 }
