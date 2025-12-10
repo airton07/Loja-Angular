@@ -24,8 +24,7 @@ export class ListaProdutoComponent {
 
   }
   listarProdutos():void{
-    this._produtoService.getProdutos()
-    .subscribe(
+    this._produtoService.getProdutos().subscribe(
       retornaProduto => {
         this.produtos = retornaProduto.map(
           item => {
@@ -44,7 +43,7 @@ export class ListaProdutoComponent {
   }
   excluir(id: number){
     this._produtoService.removerProduto(id).subscribe(
-      vaga => {
+      produto => {
         this.listarProdutos()
       },
       err => { console.log("erro ao Excluir") }
