@@ -11,9 +11,10 @@ h1 {
 
 #section-cadastro {
     height: 100%;
-    width: 400px;
+    width: 700px;
     border-radius: 10px;
     border: 2px solid black;
     padding: 10px 10px;
     margin-top: 50px;
+    margin-bottom: 10px;
 }

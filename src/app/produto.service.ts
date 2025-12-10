@@ -14,8 +14,8 @@ export class ProdutoService {
   constructor(private _httpClient: HttpClient) { }
 
   getProduto(id: any): Observable<Produto> {
-    const urlIdProduto = `${this.url}?id=${id}`;
-    return this._httpClient.get<Produto>(urlIdProduto);
+    const urlIdAtualizar = `${this.url}?id=${id}`;
+    return this._httpClient.get<Produto>(urlIdAtualizar);
   }
   getProdutos(): Observable<Produto[]> {
     return this._httpClient.get<Produto[]>(this.url);
