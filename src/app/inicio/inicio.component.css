@@ -1,3 +1,7 @@
+main {
+    min-height: 500px;
+}
+
 #section-banner {
     min-height: 400px;
 }
@@ -6,8 +10,14 @@
     height: 500px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
 .example-card {
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .example-header-image {
@@ -16,7 +26,7 @@
 }
 
 mat-grid-list {
-    margin-top: 10px;
+    margin: 10px;
     margin-bottom: 10px;
 }
 

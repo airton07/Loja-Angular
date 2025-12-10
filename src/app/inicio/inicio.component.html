@@ -25,70 +25,11 @@
         </div>
     </section>
             <h2>Jogos em Promoção</h2><mat-grid-list cols="3">
-            <mat-grid-tile>
-                <mat-card class="example-card">
-                    <img mat-card-image src="./assets/img/jogo1.PNG" alt="Simulador de Corrida">
-
-                    <mat-card-header>
-                        <mat-card-title>Jogo1</mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content>
-                        <p>
-                            Descrição Jogo: Jogo Simulador de corrida de Carros de Ruas.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <p>R$ 340,00</p>
-                        <button matButton>Comprar</button>
-                    </mat-card-actions>
-                </mat-card>
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-                <mat-card class="example-card">
-                    <img mat-card-image src="./assets/img/jogo2.PNG" alt="Simulador de Voos">
-
-                    <mat-card-header>
-                        <mat-card-title>Jogo2</mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content>
-                        <p>
-                            Descrição Jogo: Franquia mais Conhecida dessa Categoria
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <p>R$ 185,00</p>
-                        <button matButton>Comprar</button>
-                    </mat-card-actions>
-                </mat-card>
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-                <mat-card class="example-card">
-                    <img mat-card-image src="./assets/img/jogo3.PNG" alt="Jogo Aventura">
-
-                    <mat-card-header>
-                         <mat-card-title>Jogo3</mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content>
-                        <p>
-                            Descrição Jogo: Um Novo Jogo dessa Categoria Mais Bem Avaliado.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                         <p>R$ 250,00</p>
-                        <button matButton>Comprar</button>
-                    </mat-card-actions>
-                </mat-card>
-            </mat-grid-tile>
-<main>
+    <main>
     <mat-grid-list cols="3">
         <mat-grid-tile *ngFor="let produto of produtos">
             <mat-card class="example-card">
-                    <img mat-card-image src="./assets/img/{{produto.foto}}" alt="Jogo 1">
+                    <img mat-card-image src="./assets/img/jogo1.PNG" alt="Jogo 1">
         
                 <mat-card-header>
                   <mat-card-title>{{produto.produto}}</mat-card-title>
