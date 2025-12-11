@@ -14,9 +14,9 @@
             </div>
         </div>
     </section>
-
+            <h2>Produtos em Destaque</h2>
     <mat-grid-list cols="3">
-        <mat-grid-tile>
+        <mat-grid-tile *ngFor="let produto of produtos">
             <mat-card class="example-card">
                 <img mat-card-image src="./assets/img/jogo1.PNG" alt="produto">
                 <mat-card-header>
@@ -33,7 +33,9 @@
                         <button mat-raised-button color="primary">Comprar</button>
                 </mat-card-actions>
             </mat-card>
-
+        </mat-grid-tile>
+            
+        <mat-grid-tile>
             <mat-card class="example-card">
                 <img mat-card-image src="./assets/img/jogo2.PNG" alt="produto">
                 <mat-card-header>
@@ -41,14 +43,18 @@
                 </mat-card-header>
 
                 <mat-card-content>
-                    <p>Simulador de Avião</p>
+                    <p>
+                        Simulador de Avião
+                    </p>
                 </mat-card-content>
                 <mat-card-actions>
                     <p>300,00 R$<p>
                         <button mat-raised-button color="primary">Comprar</button>
                 </mat-card-actions>
             </mat-card>
+        </mat-grid-tile>
 
+        <mat-grid-tile>
             <mat-card class="example-card">
                 <img mat-card-image src="./assets/img/jogo3.PNG" alt="produto">
                 <mat-card-header>

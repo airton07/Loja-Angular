@@ -1,8 +1,9 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from 'src/app/login.service';
-import { Produto } from 'src/app/models/Produto.model';
+import { LoginService } from 'src/app/login.service'; 
+import { Produto } from 'src/app/models/produtos.model'; 
 import { ProdutoService } from 'src/app/produto.service';
+
 
 @Component({
   selector: 'app-lista-produto',
@@ -11,44 +12,45 @@ import { ProdutoService } from 'src/app/produto.service';
 })
 
 export class ListaProdutoComponent {
-  public produtos: Produto[] = [ ];
+  public produtos: Produto[] = [];
   public produto: Produto = new Produto(0, "", "", "", 0);
 
   constructor(private _produtoService: ProdutoService,
     private router: Router,
-    private _loginService: LoginService){}
+    private _loginService: LoginService){ }
 
-  ngOnInit():void{
-    this.listarProdutos();
-    this._loginService.setMostraMenu(false);
+ngOnInit(): void {
+  this.listarProdutos();
+  this._loginService.setMostraMenu(false);
 
-  }
-  listarProdutos():void{
-    this._produtoService.getProdutos().subscribe(
-      retornaProduto => {
-        this.produtos = retornaProduto.map(
-          item => {
-            return new Produto(
-              item.id,
-              item.produto,
-              item.descricao,
-              item.foto,
-              item.preco
-            );  
-          }
-        ) 
-      }
-    )
-    
-  }
-  excluir(id: number){
-    this._produtoService.removerProduto(id).subscribe(
-      produto => {
-        this.listarProdutos()
-      },
-      err => { console.log("erro ao Excluir") }
-    )
-    window.location.href = "/restrito/lista"; 
-    this.router.navigate(["/restrito/lista"]);
-  }
+}
+
+listarProdutos(): void {
+  this._produtoService.getProdutos().subscribe(
+    retornaProduto => {
+      this.produtos = retornaProduto.map(
+        item => {
+          return new Produto(
+            item.id,
+            item.produto,
+            item.descricao,
+            item.foto,
+            item.preco
+          );
+        }
+      )
+    }
+  )
+
+}
+excluir(id: number){
+  this._produtoService.removerProduto(id).subscribe(
+    vaga => {
+      this.listarProdutos()
+    },
+    err => { console.log("erro ao Excluir") }
+  );
+  window.location.href = "/restrito/lista";
+  this.router.navigate(["/restrito/lista"]);
+}
 }
