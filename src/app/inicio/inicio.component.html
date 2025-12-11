@@ -1,37 +1,41 @@
 <main>
     <section id="section-banner">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/banner1.PNG" class="d-block w-100" alt="...">
+                    <img src="./assets/img/banner1.PNG" class="d-block w-100" alt="...">   
                 </div>
+
                 <div class="carousel-item">
                     <img src="./assets/img/banner2.PNG" class="d-block w-100" alt="...">
                 </div>
+
                 <div class="carousel-item">
                     <img src="./assets/img/banner3.PNG" class="d-block w-100" alt="...">
                 </div>
+
             </div>
         </div>
     </section>
-        <h2>Jogos em Promoção</h2><mat-grid-list cols="3">
+    
     <mat-grid-list cols="3">
-        <mat-grid-tile *ngFor="let produto of produtos">
+        <mat-grid-tile>
             <mat-card class="example-card">
-                    <img mat-card-image src="./assets/img/jogo1.PNG" alt="Jogo 1">
+                <img mat-card-image src="./assets/img/jogo1.PNG" alt="produto">
                 <mat-card-header>
                     <mat-card-title>Jogo 1</mat-card-title>
                 </mat-card-header>
+
                 <mat-card-content>
                     <p>
-                        Simulador de Corridas de Ruas
+                        Simulador Corrida
                     </p>
                     <p>
                 </mat-card-content>
                 <mat-card-actions>
-                    <p>280,00 R$</p>
-                    <p>
-                        <button mat-button>Comprar</button>
+                    <p>280,00 R$<p>
+                        <button mat-raised-button color="primary">Comprar</button>
                 </mat-card-actions>
             </mat-card>
         </mat-grid-tile>
