@@ -22,7 +22,7 @@ h2 {
 
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+    background-size: auto;
 }
 
 mat-grid-list {
