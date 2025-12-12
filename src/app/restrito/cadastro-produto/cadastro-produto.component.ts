@@ -12,7 +12,7 @@ export class CadastroProdutoComponent implements OnInit{
 
   public produto: Produto = new Produto(0, "", "", "", 0); 
 
-  constructor(private _produtoService:ProdutoService, private _router: Router){}
+  constructor(private _produtoService:ProdutoService, private router: Router){}
 
   ngOnInit(): void {
   }
@@ -28,6 +28,6 @@ export class CadastroProdutoComponent implements OnInit{
       }
     );
     
-    this._router.navigate(["/restrito/lista"]);
+    this.router.navigate(["/restrito/lista"]);
   }
 }
