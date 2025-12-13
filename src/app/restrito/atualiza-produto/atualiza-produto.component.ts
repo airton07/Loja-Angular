@@ -27,14 +27,13 @@ export class AtualizaProdutoComponent implements OnInit {
     this._produtoService.getProduto(this.produtoId)
       .subscribe((res: any) => { console.log(res[0].produto);
         this.produto = new
-          Produto(res[0].id, res[0].produto, res[0].descricao, res[0].foto, res[0].preco,
-          );
+          Produto(res[0].id,res[0].produto,res[0].descricao,res[0].foto,res[0].preco);
       }
       )
   }
 
   atualizar(id: number) {
-    this._produtoService.atualizarProduto(id, this.produto).subscribe(
+    this._produtoService.atualizarProduto(id,this.produto).subscribe(
       produto => { this.produto = new Produto(0, "", "", "", 0) },
       err => {console.log("erro ao atualizar")}
     );

@@ -42,7 +42,6 @@ export class ListaProdutoComponent {
         )
       }
     )
-
   }
   excluir(id: number) {
     this._produtoService.removerProduto(id).subscribe(

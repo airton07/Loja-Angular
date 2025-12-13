@@ -29,5 +29,6 @@ export class CadastroProdutoComponent implements OnInit{
     );
     
     this.router.navigate(["/restrito/lista"]);
+    
   }
 }
