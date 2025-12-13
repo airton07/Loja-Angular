@@ -13,7 +13,7 @@ import { ProdutoService } from 'src/app/produto.service';
 
 export class ListaProdutoComponent {
   public produtos: Produto[] = [];
-  public produto: Produto = new Produto(0, "", "", "", 0);
+  public produto: Produto = new Produto(0,"","","",0);
 
   constructor(private _produtoService: ProdutoService,
     private router: Router,
