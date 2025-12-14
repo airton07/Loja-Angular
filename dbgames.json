@@ -20,20 +20,6 @@
       "descrição": "Descrição do jogo 3",
       "foto": "jogo3.PNG",
       "preço": "400"
-    },
-    {
-      "id": 0,
-      "produto": "Airton",
-      "descricao": "Simulador",
-      "foto": "jogo1.PNG",
-      "preco": 120
-    },
-    {
-      "id": 0,
-      "produto": "creed",
-      "descricao": "velocidade",
-      "foto": "jogo1.PNG",
-      "preco": 120
     }
   ]
 }
