@@ -20,6 +20,13 @@
       "descrição": "Descrição do jogo 3",
       "foto": "jogo3.PNG",
       "preço": "400"
+    },
+    {
+      "id": 0,
+      "produto": "Jogo 4",
+      "descricao": "Simulador",
+      "foto": "jogo1.PNG",
+      "preco": 225
     }
   ]
 }
